@@ -269,9 +269,11 @@ ul.list-game-iteams li:first-child i{
 
 /* gamer section */
 
-section.gamer-section {
+section.gamer-section,
+section.videos-section
+{
     background-color: #FFF9FC;
-    padding: 50px 0px;
+    padding: 60px 0px;
 }
 
 .gamer-section-wrapper {
@@ -293,22 +295,94 @@ section.gamer-section {
     width: 100%;
 }
 
-.gamer-content-box h2 {
+.gamer-content-box h2,
+.funny-videos
+{
     font-size: 2.7rem;
     background-image: linear-gradient(#F948B2, #8758F1);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
-.gamer-content-box p{
+.gamer-content-box p,
+.game-videos-content-box p,
+.mainBox-for-video p
+{
     color: #534C64;
     font-size: 1.1rem;
     margin-bottom: 22px;
 }
 
 
+/* funny game videos section */
+
+section.videos-section{
+    background-color: unset;
+}
+
+.game-videos-box-wrapper {
+    display: flex;
+    gap: 17px;
+    justify-content: center;
+}
+
+.game-videos-content-box {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.game-videos-content-box h3 {
+    font-size: 2.5rem;
+}
+
+.game-videos-content-box p,
+.mainBox-for-video p
+{
+    margin-bottom: 0;
+}
+
+.mainBox-for-video {
+    width: 24%;
+}
+
+.video-img, .video-img img {
+    width: 100%;
+}
+
+.video-img{
+    margin-bottom: 10px;
+    position: relative;
+}
 
 
+.playIcon-and-text {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 98%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid #FF42A5;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.playIcon-and-text i {
+    color: white;
+    font-size: 2.3rem;
+    
+}
+
+.playIcon-and-text span {
+    display: inline-block;
+    font-size: 1.3rem;
+    color: #F948B2;
+    font-weight: 500;
+}
 
 
 
@@ -316,7 +390,8 @@ section.gamer-section {
 
 @media screen and (max-width:639px) {
     .logoAndMenu-wrapper,
-    .gamer-section-wrapper
+    .gamer-section-wrapper,
+    .game-videos-box-wrapper
     {
         flex-direction: column;
     }
@@ -367,6 +442,20 @@ section.gamer-section {
         width: 100%;
         text-align: center;
     }
+
+    /* funny video section */
+
+    .game-videos-box-wrapper{
+        gap: 30px;
+    }
+
+    .mainBox-for-video{
+        width: 100%;
+    }
+
+
+
+
 }
 
 
@@ -410,7 +499,9 @@ section.gamer-section {
 
     /* gamer section */
 
-    .gamer-section-wrapper{
+    .gamer-section-wrapper,
+    .game-videos-box-wrapper
+    {
         flex-direction: column;
     }
 
@@ -422,6 +513,18 @@ section.gamer-section {
         width: 100%;
         text-align: center;
     }
+
+    /* funny video section */
+
+    .game-videos-box-wrapper{
+        gap: 40px;
+    }
+
+    .mainBox-for-video{
+        width: 100%;
+    }
+
+
 }
 
 
