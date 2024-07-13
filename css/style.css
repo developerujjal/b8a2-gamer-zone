@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+    margin: 0px;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    text-rendering: optimizespeed;
+    line-height: 1.5;
+    font-family: "Work Sans", sans-serif;
+    
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+
+
+
+/* Style Started from Here*/
+
+
+.container{
+    max-width: 1200px;
+    width: 100%;
+    padding: 0px 20px;
+    margin: 0 auto;
+}
+
+header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* primary-color{
+color: #FF42A5;
+} */
+
+.logoAndMenu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+ul.nav-menu-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu-wrapper li a {
+    color: #3C354F;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-menu-wrapper li {
+    margin-left: 28px;
+}
+
+.nav-menu-wrapper li:first-child{
+    margin-left: 0px;
+}
+
+.nav-menu-wrapper li a{
+    text-decoration: none;
+}
+
+.logo img {
+    width: 32%;
+    margin-right: 8px;
+}
+
+.logo span {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #0B0223;
+}
+
+.logo {
+    
+    display: flex;
+}
+
+#logo-title{
+    color: #FF42A5;
+}
+
+.logo a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo a:active{
+    color: none;
+}
+
+.navWithIcon {
+    background: rgba(11, 2, 35, 0.1);
+    padding: 9px 15px;
+}
+
+.navWithIcon a:first-child, .navWithIcon a:nth-child(2){
+    margin-right: 9px;
+}
+
+.navWithIcon a i{
+    font-size: 1.25rem;
+}
+
+.fa-youtube{
+    color: red;
+}
+
+
+
+.fa-tiktok:first-child{
+   color: #00f2ea;
+
+}
+
+.navWithIcon a:last-child{
+    position: relative;
+    font-size: 0.8rem;
+}
+
+
+.fa-tiktok:nth-child(2){
+    color: #ff0050;
+    position: absolute;
+    left: 1px;
+    bottom: -2px;
+}
+
+.fa-tiktok:last-child{
+    color: #000000;
+    position: absolute;
+    left: 0px;
+    bottom: -2px;
+}
+
+
+
+
+/* hero section */
+
+.hero-section-wrapper{
+    display: flex; /* We can also use display grid */
+    gap: 25px;
+}
+
+.hero-content-box{
+    background-image: url(../images/Group\ 14.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 120px 105px;
+    background-position: right;
+}
+
+
+.hero-content-box h1 {
+    font-size: 2.7rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    width: 515px;
+    color: #0B0223;
+}
+
+.heor-img-box img {
+    width: 85%;
+}
+
+.heor-img-box {
+    
+display: flex;
+    
+/* justify-content: flex-start; */
+}
+
+.goat-text {
+    font-size: 5.3rem;
+    text-align: center;
+    background-image: linear-gradient(#F948B2, #8758F1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: translateY(-10px);
+    display: inline-block;
+    font-weight: 800;
+}
+
+.list-game-iteams{
+    margin-bottom: 25px;
+}
+
+.list-game-iteams li {
+    line-height: 35px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #534C64;
+    
+}
+
+ul.list-game-iteams li i {
+    font-size: 1rem;
+    width: 21px;
+    color: #FF42A5;
+}
+
+ul.list-game-iteams li:last-child i {
+    font-size: 14px;
+    color: #0B0223;
+}
+
+ul.list-game-iteams li:first-child i{
+    color: #ff0000;
+}
+
+.hero-buttons a {
+    background-color: #FF42A5;
+    padding: 11px 30px;
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 38px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-image 0.4s;
+}
+
+
+.hero-buttons a:nth-child(2){
+    background-color: #4EC5F7;
+}
+
+.hero-buttons a:hover{
+    background-image: linear-gradient(#F948B2, #8758F1);
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:639px) {
+    .logoAndMenu-wrapper{
+        flex-direction: column;
+    }
+
+    .nav-menu
+    {
+        display: none;
+    }
+
+    .logo{
+        transform: scale(1.3);
+    }
+}
+
+
+
+
+/* (min-width: 640px and max-width: 767px) */
+
+@media screen and (min-width:640px) and (max-width:767px) {
+    
+}
