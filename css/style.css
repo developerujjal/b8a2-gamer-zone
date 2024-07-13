@@ -270,7 +270,8 @@ ul.list-game-iteams li:first-child i{
 /* gamer section */
 
 section.gamer-section,
-section.videos-section
+section.videos-section,
+section.play-game-online
 {
     background-color: #FFF9FC;
     padding: 60px 0px;
@@ -306,7 +307,8 @@ section.videos-section
 
 .gamer-content-box p,
 .game-videos-content-box p,
-.mainBox-for-video p
+.mainBox-for-video p,
+.play-game-online-content p
 {
     color: #534C64;
     font-size: 1.1rem;
@@ -316,7 +318,9 @@ section.videos-section
 
 /* funny game videos section */
 
-section.videos-section{
+section.videos-section,
+section.play-game-online
+{
     background-color: unset;
 }
 
@@ -336,7 +340,8 @@ section.videos-section{
 }
 
 .game-videos-content-box p,
-.mainBox-for-video p
+.mainBox-for-video p,
+.play-game-online-content p
 {
     margin-bottom: 0;
 }
@@ -383,6 +388,49 @@ section.videos-section{
     color: #F948B2;
     font-weight: 500;
 }
+
+
+
+
+
+/* online game play free section */
+
+.play-game-online-content {
+    width: 50%;
+    text-align: right;
+    padding: 0px 140px;
+}
+
+.play-game-online-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-game-online-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.play-game-online-img img {
+    width: 74%;
+}
+
+.play-game-online-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+}
+
+.play-instantly{
+    color: #F948B2;
+}
+
+
+
+
+
+
 
 
 
