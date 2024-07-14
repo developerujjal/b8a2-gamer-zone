@@ -270,8 +270,7 @@ ul.list-game-iteams li:first-child i{
 /* gamer section */
 
 section.gamer-section,
-section.videos-section,
-section.play-game-online
+section.videos-section
 {
     background-color: #FFF9FC;
     padding: 60px 0px;
@@ -318,8 +317,7 @@ section.play-game-online
 
 /* funny game videos section */
 
-section.videos-section,
-section.play-game-online
+section.videos-section
 {
     background-color: unset;
 }
@@ -409,8 +407,9 @@ section.play-game-online
 
 .play-game-online-img {
     width: 50%;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    position: relative;
 }
 
 .play-game-online-img img {
@@ -420,6 +419,7 @@ section.play-game-online
 .play-game-online-content h2 {
     font-size: 2.5rem;
     margin-bottom: 16px;
+    color: #0B0223;
 }
 
 .play-instantly{
@@ -427,8 +427,45 @@ section.play-game-online
 }
 
 
+.inner-playgame-img {
+    width: 50%;
+    position: absolute;
+    left: -105px;
+    bottom: -53px;
+}
+
+section.play-game-online{
+    padding: 50px 0px 90px 0px;
+}
 
 
+
+.online{
+    background-image: linear-gradient(#F948B2, #8758F1);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+.online-play-img {
+    text-align: center;
+}
+
+.online-content-play {
+    text-align: left;
+    padding: 0px 100px;
+}
+
+.innerImg-for-playGame {
+    left: 23rem;
+    bottom: -5rem;
+}
+
+section.section-for-online-game {
+    padding: 70px 0px 150px 0px;
+}
 
 
 
@@ -439,7 +476,8 @@ section.play-game-online
 @media screen and (max-width:639px) {
     .logoAndMenu-wrapper,
     .gamer-section-wrapper,
-    .game-videos-box-wrapper
+    .game-videos-box-wrapper,
+    .play-game-online-wrapper
     {
         flex-direction: column;
     }
@@ -482,7 +520,8 @@ section.play-game-online
 
     /* gamer section */
 
-    .gamer-img-box{
+    .gamer-img-box
+    {
         width: 100%;
     }
 
@@ -501,6 +540,29 @@ section.play-game-online
         width: 100%;
     }
 
+    .play-game-online-content{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .play-game-online-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .inner-playgame-img{
+        left: -16px;
+        bottom: -41px;
+    }
+
+    .play-game-online-wrapper{
+        gap: 50px;
+    }
+
+    .gamePlay-online-wrapper{
+        flex-direction: column-reverse;
+    }
 
 
 
@@ -526,7 +588,8 @@ section.play-game-online
         margin: 0 auto;
     }
 
-    .hero-section-wrapper{
+    .hero-section-wrapper
+    {
         flex-direction: column-reverse;
     }
     
@@ -572,6 +635,36 @@ section.play-game-online
         width: 100%;
     }
 
+    .play-game-online-wrapper{
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .play-game-online-content{
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .play-game-online-img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .inner-playgame-img{
+        left: -20px;
+    }
+
+    .innerImg-for-playGame{
+        left: 326px;
+    }
+
+    .gamePlay-online-wrapper{
+        flex-direction: column-reverse;
+    }
+
+
+
 
 }
 
@@ -611,6 +704,24 @@ section.play-game-online
         width: 45%;
     }
 
+    /* play game section */
+
+    .play-game-online-content{
+        padding: 30px;
+    }
+
+    .play-game-online-img{
+        text-align: center;
+    }
+
+    .inner-playgame-img{
+        left: -21px;
+    }
+
+    .innerImg-for-playGame{
+        left: 220px;
+    }
+
 }
 
 
@@ -632,6 +743,32 @@ section.play-game-online
 
     .hero-buttons a:first-child{
         margin-right: 1rem;
+    }
+
+    /* game play online */
+
+    .play-game-online-content{
+        padding: 90px;
+    }
+
+    .play-game-online-img{
+        text-align: center;
+    }
+
+    .inner-playgame-img{
+        left: -60px;
+    }
+
+    .innerImg-for-playGame{
+        left: 290px;
+    }
+
+    section.section-for-online-game{
+        padding: 10px 0px;
+    }
+
+    section.play-game-online{
+        padding: 15px 0px;
     }
 
 }
