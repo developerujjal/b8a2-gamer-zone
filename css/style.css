@@ -549,7 +549,8 @@ ul.mainList li {
     .logoAndMenu-wrapper,
     .gamer-section-wrapper,
     .game-videos-box-wrapper,
-    .play-game-online-wrapper
+    .play-game-online-wrapper,
+    .careers-wrapper
     {
         flex-direction: column;
     }
@@ -592,7 +593,9 @@ ul.mainList li {
 
     /* gamer section */
 
-    .gamer-img-box
+    .gamer-img-box,
+    .careers-content-box,
+    .careers-img-box
     {
         width: 100%;
     }
@@ -634,6 +637,16 @@ ul.mainList li {
 
     .gamePlay-online-wrapper{
         flex-direction: column-reverse;
+    }
+
+    .careers-content-box{
+        padding: 30px;
+    }
+
+
+    ul.mainList{
+        justify-content: center;
+        align-items: center;
     }
 
 
@@ -683,12 +696,16 @@ ul.mainList li {
     /* gamer section */
 
     .gamer-section-wrapper,
-    .game-videos-box-wrapper
+    .game-videos-box-wrapper,
+    .careers-wrapper
     {
         flex-direction: column;
     }
 
-    .gamer-img-box{
+    .gamer-img-box,
+    .careers-content-box,
+    .careers-img-box
+    {
         width: 100%;
     }
 
@@ -794,6 +811,10 @@ ul.mainList li {
         left: 220px;
     }
 
+    .careers-content-box{
+        padding-right: 10px;
+    }
+
 }
 
 
@@ -841,6 +862,10 @@ ul.mainList li {
 
     section.play-game-online{
         padding: 15px 0px;
+    }
+
+    .careers-content-box{
+        padding-right: 12px;
     }
 
 }
