@@ -545,12 +545,67 @@ ul.mainList li {
 }
 
 
+/* GameList Section */
+
+.gameList-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 8px;
+    row-gap: 32px;
+    align-items: center;
+}
+
+.gameList-singel-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 7px 10px;
+    border-radius: 37px;
+    height: 62px;
+    width: 192px;
+    background-color: #FFFFFF;
+    font-weight: 600;
+    color: #0B0223;
+    transition: border, color 0.4s ease;
+}
+
+
+.singel-boxImg img {
+    width: 73%;
+    display: block;
+}
+
+
+section.gameList-section {
+    background-color: #FFF9FC;
+    padding: 50px 0px;
+}
+
+.gameList-singel-box:hover{
+    border: 1px solid #FF42A5;
+    color: #FF42A5;
+    cursor: pointer;
+}
+
+.boxTwo {
+    width: 221px;
+}
+
+.boxTwo3{
+    width: 240px;
+}
+
+
+
 @media screen and (max-width:639px) {
     .logoAndMenu-wrapper,
     .gamer-section-wrapper,
     .game-videos-box-wrapper,
     .play-game-online-wrapper,
-    .careers-wrapper
+    .careers-wrapper,
+    .gameList-wrapper
     {
         flex-direction: column;
     }
@@ -648,8 +703,6 @@ ul.mainList li {
         justify-content: center;
         align-items: center;
     }
-
-
 
 }
 
